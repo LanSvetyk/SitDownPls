@@ -34,13 +34,13 @@
     }
     @include _350 {
       min-width: 29.6rem;
-      max-height: 28.6rem;
+      max-height: 43rem;
     }
   }
   &__close {
     &:hover {
       &::after {
-        background-image: url("../images/exit-color.svg");
+        background-image: url("./images/exit-color.svg");
         transition: background-image 0.3s ease-in-out;
       }
     }
@@ -52,11 +52,17 @@
       width: 2rem;
       height: 2rem;
       z-index: 10;
-      background-image: url("../images/exit.svg");
+      background-image: url("./images/exit.svg");
       background-repeat: no-repeat;
       background-size: contain;
       transition: background-image 0.3s ease-in-out;
       cursor: pointer;
+      @include _350 {
+        top: 1.6rem;
+        right: 1.6rem;
+        width: 1.2rem;
+        height: 1.2rem;
+      }
     }
   }
   &__container {
@@ -84,6 +90,13 @@
     }
     @include _350 {
       min-height: 16.8rem;
+    }
+  }
+  &__form {
+    @include _350 {
+      .form__descr {
+        margin-bottom: 1.6rem;
+      }
     }
   }
   .item__img {
@@ -116,6 +129,9 @@
   &__buy {
     max-width: 63rem;
     padding: 3rem;
+    @include _350 {
+      padding: 3rem 1.6rem;
+    }
   }
   &__thanks {
     display: flex;
@@ -125,9 +141,13 @@
   }
   &__thanks-title {
     padding: 0 5rem;
+    text-align: center;
     font-weight: 400;
     font-size: 3.2rem;
     line-height: 100%;
+    @include _350 {
+      font-size: 1.6rem;
+    }
   }
 }
 .mini-card {

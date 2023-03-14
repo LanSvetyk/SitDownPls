@@ -426,8 +426,12 @@
     margin: 0;
     padding: 0;
     margin-bottom: 0.8rem;
+    font-weight: 400;
     font-size: 3.2rem;
     line-height: 100%;
+    @include _350 {
+      font-size: 2.4rem;
+    }
   }
   &__text {
     padding: 0;
@@ -437,6 +441,10 @@
     font-size: 1.4rem;
     line-height: 136%;
     margin-bottom: 3rem;
+    @include _350 {
+      width: 100%;
+      margin-bottom: 1.6rem;
+    }
   }
 }
 

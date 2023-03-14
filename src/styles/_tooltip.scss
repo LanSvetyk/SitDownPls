@@ -17,7 +17,7 @@
     border: none;
     width: 1.4rem;
     height: 1.4rem;
-    background-image: url("../images/icon-tooltip-def.svg");
+    background-image: url("./images/icon-tooltip-def.svg");
     background-color: transparent;
     transition: background-image 0.3s ease-in-out;
     outline: none;
@@ -25,7 +25,7 @@
     cursor: pointer;
     &:focus,
     &:hover {
-      background-image: url("../images/icon-tooltip-foc.svg");
+      background-image: url("./images/icon-tooltip-foc.svg");
       transition: background-image 0.3s ease-in-out;
       + .tooltip__popup {
         opacity: 1;

@@ -23,42 +23,42 @@
     }
   }
   &__bg1 {
-    background-image: url("../images/desktop/screen-slider_1.jpg");
+    background-image: url("./images/desktop/screen-slider_1.jpg");
     @include _1190 {
-      background-image: url("../images/1024/screen-slider_1.jpg");
+      background-image: url("./images/1024/screen-slider_1.jpg");
     }
     @include _768 {
-      background-image: url("../images/768/screen-slider_1.jpg");
+      background-image: url("./images/768/screen-slider_1.jpg");
     }
     @include _350 {
-      background-image: url("../images/320/screen-slider_1.jpg");
+      background-image: url("./images/320/screen-slider_1.jpg");
     }
   }
   &__bg2 {
-    background-image: url("../images/desktop/screen-slider_2.jpg");
+    background-image: url("./images/desktop/screen-slider_2.jpg");
     @include _1190 {
-      background-image: url("../images/1024/screen-slider_2.jpg");
+      background-image: url("./images/1024/screen-slider_2.jpg");
     }
     @include _768 {
-      background-image: url("../images/768/screen-slider_2.jpg");
+      background-image: url("./images/768/screen-slider_2.jpg");
     }
     @include _350 {
-      background-image: url("../images/320/screen-slider_2.jpg");
+      background-image: url("./images/320/screen-slider_2.jpg");
     }
   }
   &__bg3 {
-    background-image: url("../images/desktop/screen-slider_3.jpg");
+    background-image: url("./images/desktop/screen-slider_3.jpg");
     .hero__title {
       color: $colorBg;
     }
     @include _1190 {
-      background-image: url("../images/1024/screen-slider_3.jpg");
+      background-image: url("./images/1024/screen-slider_3.jpg");
     }
     @include _768 {
-      background-image: url("../images/768/screen-slider_3.jpg");
+      background-image: url("./images/768/screen-slider_3.jpg");
     }
     @include _350 {
-      background-image: url("../images/320/screen-slider_3.jpg");
+      background-image: url("./images/320/screen-slider_3.jpg");
     }
   }
   &__bg4 {

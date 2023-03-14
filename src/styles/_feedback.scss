@@ -115,4 +115,9 @@
   .form__input {
     outline: 1px solid red;
   }
+  @include _350 {
+    .error-label {
+      font-size: 1rem;
+    }
+  }
 }

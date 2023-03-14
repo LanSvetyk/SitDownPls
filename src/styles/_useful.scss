@@ -176,57 +176,57 @@
   }
   &__img1 {
     min-height: 42.6rem;
-    background-image: url("../images/desktop/useful-1.jpg");
+    background-image: url("./images/desktop/useful-1.jpg");
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
     @include _1190 {
       min-height: 20.2rem;
-      background-image: url("../images/1024/useful-1.jpg");
+      background-image: url("./images/1024/useful-1.jpg");
     }
   }
   &__img2 {
     min-height: 42.6rem;
-    background-image: url("../images/desktop/useful-2.jpg");
+    background-image: url("./images/desktop/useful-2.jpg");
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
     @include _1190 {
       min-height: 20.2rem;
-      background-image: url("../images/1024/useful-2.jpg");
+      background-image: url("./images/1024/useful-2.jpg");
     }
   }
   &__img3 {
     min-height: 42.6rem;
-    background-image: url("../images/desktop/useful-2-1.jpg");
+    background-image: url("./images/desktop/useful-2-1.jpg");
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
     @include _1190 {
       min-height: 20.2rem;
-      background-image: url("../images/1024/useful-2-1.jpg");
+      background-image: url("./images/1024/useful-2-1.jpg");
     }
   }
   &__img4 {
     min-height: 42.6rem;
-    background-image: url("../images/desktop/useful-2-2.jpg");
+    background-image: url("./images/desktop/useful-2-2.jpg");
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
     @include _1190 {
       min-height: 20.2rem;
-      background-image: url("../images/1024/useful-2-2.jpg");
+      background-image: url("./images/1024/useful-2-2.jpg");
     }
   }
   &__img5 {
     min-height: 42.6rem;
-    background-image: url("../images/desktop/useful-2-3.jpg");
+    background-image: url("./images/desktop/useful-2-3.jpg");
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
     @include _1190 {
       min-height: 20.2rem;
-      background-image: url("../images/1024/useful-2-3.jpg");
+      background-image: url("./images/1024/useful-2-3.jpg");
     }
   }
 }
