@@ -1,5 +1,5 @@
 (function () {
-const host = "http://localhost:3000/";
+const host = "https://lansvetyk.github.io/";
 // JAVASCRIPT FOR INDEX PAGE
 if (window.location.href == host + 'index.html' || window.location.href == host) {
   document.addEventListener("DOMContentLoaded", () => {

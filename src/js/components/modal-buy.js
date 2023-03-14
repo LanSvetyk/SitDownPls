@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const host = "http://localhost:3000/";
+  const host = "https://lansvetyk.github.io/";
     const clickBuy = document.getElementById("click-buy");
     const modalBuy = document.getElementById("modal-buy");
     const closeBuy = document.querySelector(".close__btn");
