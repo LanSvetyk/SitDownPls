@@ -7,6 +7,7 @@
   background-color: transparent;
   outline: none;
   min-width: 30rem;
+  z-index: 2002;
   @include _1190 {
     min-width: 31.5%;
   }
@@ -24,7 +25,7 @@
 
 .choices {
   position: relative;
-  z-index: 2;
+  z-index: 2002;
 }
 
 .choices__list--single {
@@ -42,7 +43,7 @@
   border: 0.2rem solid $colorBackgroundCard;
   overflow: hidden;
   transition: border 0.3s ease-in-out;
-
+  z-index: 2002;
   &:focus {
     background-color: $colorDefault;
   }
@@ -59,6 +60,7 @@
 .is-open .choices__inner {
   border: 0.2rem solid $colorDefault;
   border-radius: 0 1rem 1rem 0;
+  z-index: 2002;
 }
 
 .choices__placeholder {
@@ -131,6 +133,7 @@
   margin-top: 2.2rem;
   border-color: $colorDefault;
   background-color: $colorBg;
+  z-index: 2002;
 }
 
 /* стрелочка */
