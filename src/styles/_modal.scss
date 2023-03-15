@@ -34,7 +34,7 @@
     }
     @include _480 {
       min-width: 29.6rem;
-      max-height: 43rem;
+      max-height: 46rem;
     }
   }
   &__close {
@@ -171,7 +171,7 @@
       color: $colorDefault;
       transition: background-image 0.3s ease-in-out,
         background-color 0.3s ease-in-out, border 0.3s ease-in-out;
-      z-index: 9999999;
+      z-index: 9999998;
     }
     &__button-next {
       background-image: url("./images/arrow-rightprimary.svg");
