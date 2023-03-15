@@ -360,7 +360,7 @@
     font-size: 2.4rem;
     line-height: 130%;
     color: $colorText;
-    @include _350 {
+    @include _480 {
       font-size: 1.7rem;
     }
   }
@@ -372,7 +372,7 @@
     font-size: 1.4rem;
     line-height: 100%;
     color: $colorTextMenu;
-    @include _350 {
+    @include _480 {
       padding-right: 6.7rem;
     }
   }
@@ -383,7 +383,7 @@
     .item__price--catalog {
       color: $colorText;
     }
-    @include _350 {
+    @include _480 {
       margin: 2rem 0;
       font-size: 2.4rem;
       line-height: 1;
@@ -400,7 +400,7 @@
 
     background-color: $colorDefault;
     color: $colorBg;
-    @include _350 {
+    @include _480 {
       max-width: 100%;
       width: 100%;
       margin-bottom: 1rem;
@@ -415,7 +415,7 @@
     border: none;
     outline: none;
     background-color: transparent;
-    @include _350 {
+    @include _480 {
       margin-bottom: 0.6rem;
     }
   }
@@ -429,7 +429,7 @@
     font-weight: 400;
     font-size: 3.2rem;
     line-height: 100%;
-    @include _350 {
+    @include _480 {
       font-size: 2.4rem;
     }
   }
@@ -441,7 +441,7 @@
     font-size: 1.4rem;
     line-height: 136%;
     margin-bottom: 3rem;
-    @include _350 {
+    @include _480 {
       width: 100%;
       margin-bottom: 1.6rem;
     }
