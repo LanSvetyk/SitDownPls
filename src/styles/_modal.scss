@@ -32,7 +32,7 @@
       width: 95%;
       max-height: 49.4rem;
     }
-    @include _350 {
+    @include _480 {
       min-width: 29.6rem;
       max-height: 43rem;
     }
@@ -57,7 +57,7 @@
       background-size: contain;
       transition: background-image 0.3s ease-in-out;
       cursor: pointer;
-      @include _350 {
+      @include _480 {
         top: 1.6rem;
         right: 1.6rem;
         width: 1.2rem;
@@ -74,7 +74,7 @@
       margin-bottom: 0;
     }
     .modal__wrapper {
-      @include _350 {
+      @include _480 {
         max-height: 16.8rem;
       }
     }
@@ -88,12 +88,12 @@
     @include _979 {
       min-height: 30rem;
     }
-    @include _350 {
+    @include _480 {
       min-height: 16.8rem;
     }
   }
   &__form {
-    @include _350 {
+    @include _480 {
       .form__descr {
         margin-bottom: 1.6rem;
       }
@@ -117,7 +117,7 @@
       @include _979 {
         transform: scale(0.8);
       }
-      @include _350 {
+      @include _480 {
         transform: scale(1);
         width: 60%;
       }
@@ -129,7 +129,7 @@
   &__buy {
     max-width: 63rem;
     padding: 3rem;
-    @include _350 {
+    @include _480 {
       padding: 3rem 1.6rem;
     }
   }
@@ -145,7 +145,7 @@
     font-weight: 400;
     font-size: 3.2rem;
     line-height: 100%;
-    @include _350 {
+    @include _480 {
       font-size: 1.6rem;
     }
   }
@@ -243,7 +243,7 @@
     @include _979 {
       padding: 2rem 4rem;
     }
-    @include _350 {
+    @include _480 {
       padding: 2rem 2rem;
     }
     .mini-card-product__item {
