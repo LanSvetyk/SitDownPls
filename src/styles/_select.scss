@@ -7,7 +7,6 @@
   background-color: transparent;
   outline: none;
   min-width: 30rem;
-  z-index: 2002;
   @include _1190 {
     min-width: 31.5%;
   }
@@ -25,7 +24,6 @@
 
 .choices {
   position: relative;
-  z-index: 2002;
 }
 
 .choices__list--single {
@@ -43,7 +41,6 @@
   border: 0.2rem solid $colorBackgroundCard;
   overflow: hidden;
   transition: border 0.3s ease-in-out;
-  z-index: 2002;
   &:focus {
     background-color: $colorDefault;
   }
@@ -56,11 +53,12 @@
     background-color: $colorBg;
   }
 }
-
+.choices.is-open {
+  z-index: 2002;
+}
 .is-open .choices__inner {
   border: 0.2rem solid $colorDefault;
   border-radius: 0 1rem 1rem 0;
-  z-index: 2002;
 }
 
 .choices__placeholder {
@@ -76,6 +74,9 @@
   flex-direction: column;
   max-height: 21.4rem;
   flex-wrap: wrap;
+}
+.choices .is-focused .is-open {
+  z-index: 2005;
 }
 .is-focused .choices__inner {
   background-color: $colorFocusBg;
@@ -116,6 +117,11 @@
   margin-top: 0;
   top: 2rem;
   z-index: -1;
+  @include _480 {
+    border-top: 0;
+    top: 3.5rem;
+    z-index: 2001;
+  }
 }
 
 .choices__list--dropdown .choices__placeholder .is-focused {
@@ -133,7 +139,6 @@
   margin-top: 2.2rem;
   border-color: $colorDefault;
   background-color: $colorBg;
-  z-index: 2002;
 }
 
 /* стрелочка */
