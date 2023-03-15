@@ -13,12 +13,13 @@
   }
   &__marker {
     position: relative;
-    display: inline-block;
+    display: inline-flex;
     border: none;
     width: 1.4rem;
     height: 1.4rem;
     background-image: url("./images/icon-tooltip-def.svg");
     background-color: transparent;
+    background-repeat: no-repeat;
     transition: background-image 0.3s ease-in-out;
     outline: none;
     outline-offset: 0;
@@ -27,7 +28,7 @@
     &:hover {
       background-image: url("./images/icon-tooltip-foc.svg");
       transition: background-image 0.3s ease-in-out;
-      + .tooltip__popup {
+      .tooltip__popup {
         opacity: 1;
         &::after {
           opacity: 1;
@@ -38,8 +39,8 @@
   &__popup {
     position: absolute;
     display: block;
-    bottom: 54%;
-    left: 85%;
+    left: -72px;
+    bottom: 24px;
     padding: 0.5rem;
     min-height: 5.2rem;
     min-width: 15.7rem;
