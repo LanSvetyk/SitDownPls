@@ -284,7 +284,7 @@ input[type="checkbox"]:focus {
     cursor: pointer;
     @include _1190 {
       padding: 0.9rem 1.6rem;
-      background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='13' height='8' viewBox='0 0 13 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M6.34326 2.19479L1.44065 7.09739L0.686407 6.34315L6.34326 0.686292L12.0001 6.34315L11.2459 7.09739L6.34326 2.19479Z' fill='%23A65CF0'/%3e%3c/svg%3e "),
+      background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='13' height='8' viewBox='0 0 13 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M6.65674 5.80521L11.5593 0.902607L12.3136 1.65685L6.65674 7.31371L0.999884 1.65685L1.75413 0.902607L6.65674 5.80521Z' fill='%23A65CF0'/%3e%3c/svg%3e"),
         linear-gradient(
           to bottom,
           $colorBackgroundCard 0%,
@@ -295,8 +295,8 @@ input[type="checkbox"]:focus {
   }
 
   .arrow-app {
-    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='13' height='8' viewBox='0 0 13 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M6.65674 5.80521L11.5593 0.902607L12.3136 1.65685L6.65674 7.31371L0.999884 1.65685L1.75413 0.902607L6.65674 5.80521Z' fill='%23A65CF0'/%3e%3c/svg%3e"),
-      linear-gradient(
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='13' height='8' viewBox='0 0 13 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M6.34326 2.19479L1.44065 7.09739L0.686407 6.34315L6.34326 0.686292L12.0001 6.34315L11.2459 7.09739L6.34326 2.19479Z' fill='%23A65CF0'/%3e%3c/svg%3e "),
+    linear-gradient(
         to bottom,
         $colorBackgroundCard 0%,
         $colorBackgroundCard 100%

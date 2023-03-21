@@ -204,6 +204,19 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: 30%;
+        + .swiper-button-disabled {
+          border: 2px solid $colorTextMenu;
+          color: $colorTextMenu;
+          background-image: url("./images/arrow-rightgrey.svg");
+          &:focus,
+          &:hover,
+          &:active {
+            border: 2px solid $colorTextMenu;
+            color: $colorTextMenu;
+            background-image: url("./images/arrow-rightgrey.svg");
+            background-color: $colorBg;
+          }
+        }
       }
       &:active {
         background: $colorActive;
@@ -226,6 +239,9 @@
         &:focus,
         &:hover,
         &:active {
+          border: 2px solid $colorTextMenu;
+          color: $colorTextMenu;
+          background-image: url("./images/arrow-rightgrey.svg");
           background-color: $colorBg;
         }
       }

@@ -124,6 +124,9 @@
       &:focus,
       &:hover,
       &:active {
+        border: 2px solid $colorTextMenu;
+        color: $colorTextMenu;
+        background-image: url("./images/arrow-rightgrey.svg");
         background-color: $colorBg;
       }
     }

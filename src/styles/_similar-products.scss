@@ -17,7 +17,7 @@
     min-width: 32rem;
   }
   @include _350 {
-    margin-bottom: 11.7rem
+    margin-bottom: 11.7rem;
   }
   &__wrapper {
     position: relative;
@@ -109,8 +109,8 @@
     border-radius: 50%;
     width: 3.2rem;
     height: 3.2rem;
-    border: 2px solid $colorTextMenu;
-    color: $colorTextMenu;
+    border: 2px solid $colorDefault;
+    color: $colorDefault;
     transition: background-color 0.3s, border 0.3s;
   }
   &__button-prev {
@@ -167,6 +167,9 @@
       &:focus,
       &:hover,
       &:active {
+        border: 2px solid $colorTextMenu;
+        color: $colorTextMenu;
+        background-image: url("./images/arrow-rightgrey.svg");
         background-color: $colorBg;
       }
     }

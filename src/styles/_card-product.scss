@@ -213,8 +213,8 @@
     border-radius: 50%;
     width: 3.2rem;
     height: 3.2rem;
-    border: 0.2rem solid $colorTextMenu;
-    color: $colorTextMenu;
+    border: 0.2rem solid $colorDefault;
+    color: $colorDefault;
     transition: background-color 0.3s, border 0.3s;
   }
   &__button-next {
@@ -223,6 +223,19 @@
     background-repeat: no-repeat;
     background-size: 30%;
     transform: rotate(180deg);
+    + .swiper-button-disabled {
+      border: 2px solid $colorTextMenu;
+      color: $colorTextMenu;
+      background-image: url("./images/arrow-rightgrey.svg");
+      &:focus,
+      &:hover,
+      &:active {
+        border: 2px solid $colorTextMenu;
+        color: $colorTextMenu;
+        background-image: url("./images/arrow-rightgrey.svg");
+        background-color: $colorBg;
+      }
+    }
 
     &:focus {
       background: $colorHover;
@@ -252,6 +265,19 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: 30%;
+    + .swiper-button-disabled {
+      border: 2px solid $colorTextMenu;
+      color: $colorTextMenu;
+      background-image: url("./images/arrow-rightgrey.svg");
+      &:focus,
+      &:hover,
+      &:active {
+        border: 2px solid $colorTextMenu;
+        color: $colorTextMenu;
+        background-image: url("./images/arrow-rightgrey.svg");
+        background-color: $colorBg;
+      }
+    }
     &:focus {
       background: $colorHover;
       background-image: url("./images/arrow-rightwihte.svg");

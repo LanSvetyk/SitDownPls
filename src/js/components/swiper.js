@@ -1,6 +1,6 @@
 const swiper = new Swiper(".swiper", {
   slidesPerView: 1,
-  loop: true,
+
   speed: 500,
   //  centeredSlides: true,
   // пагинация
@@ -74,7 +74,6 @@ const usefulSwiper = new Swiper(".useful__wrapper", {
 ////////////////////////////////////////
 
 const similarProducts = new Swiper(".similar-products__wrapper", {
-  loop: true,
   speed: 500,
 
   navigation: {
@@ -114,7 +113,7 @@ const similarProducts = new Swiper(".similar-products__wrapper", {
 
 const miniCardProduct = new Swiper(".mini-card-product__images", {
   slidesPerView: 4,
-  loop: true,
+
   speed: 500,
   initialSlide: 2,
   spaceBetween: 32,
@@ -137,7 +136,7 @@ const miniCardProduct = new Swiper(".mini-card-product__images", {
 
 const cardProduct = new Swiper(".card-product__images", {
   slidesPerView: 1,
-  loop: true,
+
   speed: 500,
   spaceBetween: 32,
   navigation: {
@@ -164,7 +163,7 @@ const cardProduct = new Swiper(".card-product__images", {
 
 const miniCardProductModal = new Swiper(".mini-card__modal", {
   slidesPerView: 4,
-  loop: true,
+
   speed: 500,
   breakpoints: {
     320: {
@@ -188,7 +187,7 @@ const miniCardProductModal = new Swiper(".mini-card__modal", {
 
 const cardProductModal = new Swiper(".modal__container", {
   slidesPerView: 1,
-  loop: true,
+
   speed: 500,
   thumbs: {
     swiper: miniCardProductModal,
