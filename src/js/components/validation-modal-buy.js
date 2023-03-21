@@ -1,5 +1,5 @@
 (function () {
-  if (window.location.pathname === "/card-product.html") {
+  if(window.location.toString().indexOf('card-product.html')>0) {
     document.addEventListener("DOMContentLoaded", () => {
       const $form = document.getElementById("form-buy");
       const modalBuy = document.getElementById("modal-buy");

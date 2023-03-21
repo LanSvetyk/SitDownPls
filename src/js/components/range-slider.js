@@ -1,5 +1,5 @@
 const createRangeSlader = () => {
-  if (window.location.pathname === "/catalog.html") {
+  if(window.location.toString().indexOf('catalog.html')>0) {
     const rangeSlider = document.getElementById("range-slider");
     if (rangeSlider) {
       noUiSlider.create(rangeSlider, {

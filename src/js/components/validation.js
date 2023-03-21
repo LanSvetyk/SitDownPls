@@ -1,5 +1,5 @@
 (function () {
-if (window.location.pathname === "/index.html" || window.location.href === "http://localhost:3000/") {
+if (window.location.toString().indexOf('index.html')>0 || window.location.href === "http://localhost:3000/" || window.location.href === "https://lansvetyk.github.io/SitDownPls_prod/" ) {
   document.addEventListener("DOMContentLoaded", () => {
     const $form = document.getElementById("form");
     const $accept = document.getElementById("accept");
@@ -107,5 +107,4 @@ if (window.location.pathname === "/index.html" || window.location.href === "http
   });
 }
 })();
-
 

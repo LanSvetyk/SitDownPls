@@ -1,4 +1,4 @@
-if (window.location.pathname === "/catalog.html") {
+if(window.location.toString().indexOf('catalog.html')>0) {
   const selectCategoria = document.getElementById("categoria");
   const selectPrice = document.getElementById("price");
   const selectSale = document.getElementById("sale");
