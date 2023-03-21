@@ -215,8 +215,7 @@
     height: 3.2rem;
     border: 0.2rem solid $colorTextMenu;
     color: $colorTextMenu;
-    transition: background-image 0.3s ease-in-out,
-      background-color 0.3s ease-in-out, border 0.3s ease-in-out;
+    transition: background-color 0.3s, border 0.3s;
   }
   &__button-next {
     background-image: url("./images/arrow-rightgrey.svg");

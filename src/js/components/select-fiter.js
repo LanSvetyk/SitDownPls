@@ -1,7 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
-const host = "https://lansvetyk.github.io/SitDownPls_prod/";
-// JAVASCRIPT FOR INDEX PAGE
-if (window.location.href == host + "catalog.html") {
+if (window.location.pathname === "/catalog.html") {
   const selectCategoria = document.getElementById("categoria");
   const selectPrice = document.getElementById("price");
   const selectSale = document.getElementById("sale");
@@ -11,104 +8,92 @@ if (window.location.href == host + "catalog.html") {
   const arrowSelectPrice = selectPrice.firstElementChild;
   const arrowSelectSale = selectSale.firstElementChild;
   const arrowSelectColor = selectColor.firstElementChild;
-  const catalogFilters = document.querySelectorAll(".list__checkboxes, .block");
-
+  const catalogFilters = document.querySelectorAll(".list__checkboxes");
+  const filtersCheckboxes = document.querySelectorAll(".filters__checkboxes");
   // select categoria
   function checkboxesOpenCat() {
     const checkCat = document.getElementById("check-categoria");
-    if (checkCat.classList.contains("block")) {
-      checkCat.classList.add("none");
-      checkCat.classList.remove("block");
+    if (checkCat.classList.contains("list__checkboxes-close")) {
+      checkCat.classList.remove("list__checkboxes-close");
       arrowSelectCategoria.classList.add("arrow-app");
-    } else {
-      checkCat.classList.remove("none");
-      checkCat.classList.add("block");
+    } else if (!checkCat.classList.contains("list__checkboxes-close")) {
+      checkCat.classList.add("list__checkboxes-close");
       arrowSelectCategoria.classList.remove("arrow-app");
     }
   }
-  selectCategoria.addEventListener("click", () => {
-    checkboxesOpenCat();
-  });
+  if (document.documentElement.clientWidth < 1190) {
+    selectCategoria.addEventListener("click", () => {
+      checkboxesOpenCat();
+    });
+  }
 
   // select price
   const checkPrice = document.getElementById("check-price");
-
-  const rangeSlider = document.getElementById("range-slider");
-  if (document.documentElement.clientWidth < 1190) {
-    checkPrice.classList.add("column");
-    checkPrice.firstElementChild.style.marginBottom = "10px";
-  }
   function checkboxesOpenPrice() {
-    if (checkPrice.classList.contains("flex")) {
-      checkPrice.classList.add("none");
-      checkPrice.classList.remove("flex");
-      rangeSlider.classList.add("none");
+    if (checkPrice.classList.contains("list__checkboxes-close")) {
+      checkPrice.classList.remove("list__checkboxes-close");
       arrowSelectPrice.classList.add("arrow-app");
-    } else {
-      checkPrice.classList.remove("none");
-      checkPrice.classList.add("flex");
-      rangeSlider.classList.remove("none");
+    } else if (!checkPrice.classList.contains("list__checkboxes-close")) {
+      checkPrice.classList.add("list__checkboxes-close");
       arrowSelectPrice.classList.remove("arrow-app");
     }
   }
-  selectPrice.addEventListener("click", () => {
-    checkboxesOpenPrice();
-  });
+  if (document.documentElement.clientWidth < 1190) {
+    selectPrice.addEventListener("click", () => {
+      checkboxesOpenPrice();
+    });
+  }
 
   // select sale
+  const checkSale = document.getElementById("check-sale");
   function checkboxesOpenSale() {
-    const checkSale = document.getElementById("check-sale");
-    if (checkSale.classList.contains("block")) {
-      checkSale.classList.add("none");
-      checkSale.classList.remove("block");
+    if (checkSale.classList.contains("list__checkboxes-close")) {
+      checkSale.classList.remove("list__checkboxes-close");
       arrowSelectSale.classList.add("arrow-app");
-    } else {
-      checkSale.classList.remove("none");
-      checkSale.classList.add("block");
+    } else if (!checkSale.classList.contains("list__checkboxes-close")) {
+      checkSale.classList.add("list__checkboxes-close");
       arrowSelectSale.classList.remove("arrow-app");
     }
   }
+  if (document.documentElement.clientWidth < 1190) {
+    selectSale.addEventListener("click", () => {
+      checkboxesOpenSale();
+    });
+  }
 
-  selectSale.addEventListener("click", () => {
-    checkboxesOpenSale();
-  });
   // select color
+  const checkColor = document.getElementById("check-color");
   function checkboxesOpenColor() {
-    const checkColor = document.getElementById("check-color");
-    if (checkColor.classList.contains("block")) {
-      checkColor.classList.add("none");
-      checkColor.classList.remove("block");
+    if (checkColor.classList.contains("list__checkboxes-close")) {
+      checkColor.classList.remove("list__checkboxes-close");
       arrowSelectColor.classList.add("arrow-app");
-    } else {
-      checkColor.classList.remove("none");
-      checkColor.classList.add("block");
+    } else if (!checkColor.classList.contains("list__checkboxes-close")) {
+      checkColor.classList.add("list__checkboxes-close");
       arrowSelectColor.classList.remove("arrow-app");
     }
   }
-  selectColor.addEventListener("click", () => {
-    checkboxesOpenColor();
-  });
-
   if (document.documentElement.clientWidth < 1190) {
-    checkPrice.classList.add("column");
-    checkPrice.firstElementChild.style.marginBottom = "10px";
-    catalogFilters.forEach((element) => {
-      if (element.classList.contains("block")) {
-        element.classList.remove("block");
-        element.classList.add("none");
-        listSelect.forEach((el) => {
-          el.classList.add("arrow-app");
-        });
-      }
-      if (element.classList.contains("flex")) {
-        element.classList.remove("flex");
-        element.classList.add("none");
-        rangeSlider.classList.add("none");
-        listSelect.forEach((el) => {
-          el.classList.remove("arrow-app");
-        });
-      }
+    selectColor.addEventListener("click", () => {
+      checkboxesOpenColor();
     });
   }
+
+  const filtersTitle = document.querySelector(".filters__title");
+  if (document.documentElement.clientWidth < 1190) {
+    filtersTitle.textContent = "Фильтры:";
+  } else if (document.documentElement.clientWidth > 1190) {
+    filtersTitle.textContent = "Фильтровать по:";
+  }
+
+  window.addEventListener(
+    "resize",
+    function (event) {
+      if (document.documentElement.clientWidth < 1190) {
+        filtersTitle.textContent = "Фильтры:";
+      } else if (document.documentElement.clientWidth > 1190) {
+        filtersTitle.textContent = "Фильтровать по:";
+      }
+    },
+    true
+  );
 }
-});

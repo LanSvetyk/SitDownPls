@@ -13,7 +13,8 @@
     @include _979 {
       opacity: 1;
       font-size: 1.4rem;
-      height: 100%;
+      height: 30px;
+      width: 30px;
     }
     @include _768 {
       left: 9.2%;
@@ -52,6 +53,9 @@
     @include _600 {
       margin-bottom: 1.8rem;
     }
+    @include _350 {
+      margin-bottom: 0;
+    }
   }
   &__top-wrapper {
     padding: 1.5rem;
@@ -82,7 +86,7 @@
   &__wrap-select {
     display: flex;
     align-items: center;
-    margin-right: 2.2rem;
+    margin-right: 4.2rem;
     @include _1190 {
       margin-left: 0;
       padding-top: 1.8rem;
@@ -138,6 +142,40 @@
     @include _750 {
       display: none;
     }
+    @include _400 {
+      display: block;
+      padding: 0;
+      z-index: 1111111;
+      .nav__list {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 1.2rem;
+        margin: 0;
+        margin-left: -1.5rem;
+        padding: 0;
+        position: absolute;
+        bottom: -53rem;
+        left: 1.5rem;
+        width: 0;
+        height: 0;
+        background-color: $colorBackgroundCard;
+        z-index: 1111111;
+        opacity: 0;
+        .nav__link {
+          padding: 0;
+        }
+        .nav__item:nth-child(3) {
+          width: 50%;
+        }
+        &-open {
+          width: 100%;
+          height: auto;
+          padding: 2.4rem 1.2rem;
+          opacity: 1;
+          transition: opacity 0.3s ease-in-out;
+        }
+      }
+    }
   }
   &__middle {
     max-width: 131rem;
@@ -179,6 +217,10 @@
   &__nav-list {
     .nav__item {
       .nav__link {
+        font-family: "Open Sans", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.3;
         font-size: 1.7rem;
         color: #000;
         &:focus {
@@ -205,28 +247,60 @@
     }
     @include _979 {
       .nav__list {
-        position: absolute;
-        top: 0;
-        left: 0;
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        top: 10.8rem;
+        left: 0;
         width: 0;
-        background-color: $colorBackgroundCard;
+        background-color: $colorBg;
         height: 0;
         opacity: 0;
         z-index: 1111111;
-        .nav__item {
-          margin-bottom: 2rem;
+        transition: height 0.3s ease-in-out;
+        @include _480 {
+          flex-wrap: nowrap;
+          top: 14.4rem;
+          width: 0;
+          height: 0;
         }
         &-open {
-          padding: 8rem 12rem;
           width: 100%;
-          height: 100vh;
+          height: 117%;
+          padding: 9.2rem 25.2rem 6rem 7.2rem;
+          gap: 4.1rem;
           opacity: 1;
           transition: opacity 0.3s ease-in-out;
           @include _480 {
-            padding: 8rem 8rem;
+            width: 100%;
+            height: 130%;
+            padding: 6.2rem 14.4rem 6rem 1.2rem;
+          }
+          @include _400 {
+            height: 124%;
+            padding: 6.2rem 14.4rem 2.6rem 1.2rem;
+          }
+          @include _350 {
+            height: 128%;
+          }
+        }
+        &::after {
+          position: absolute;
+          right: 7.2rem;
+          bottom: 6rem;
+          content: "";
+          display: block;
+          height: 12.1rem;
+          width: 16.1rem;
+          background-image: url("data:image/svg+xml,%3Csvg width='161' height='112' viewBox='0 0 161 112' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath opacity='0.2' fill-rule='evenodd' clip-rule='evenodd' d='M25.5794 100.365C45.8369 100.365 49.6542 82.2743 49.6542 67.7904C52.0602 67.7904 71.0747 67.7904 79.7477 67.7904C126.924 67.7904 126.936 0 81.2523 0C68.8268 0 60.8234 7.65074 58.6807 10.3159C33.1916 10.3159 30.0935 23.8426 30.0935 50.1074C30.0935 55.1744 30.0935 71.6455 30.0935 74.1827C30.0935 80.3583 27.6499 84.3648 21.0639 84.3648C15.441 84.3648 12.7777 79.3079 10.5312 72.2115C9.36058 72.8501 1.14055 77.3658 0 78.1063C2.48723 85.1955 5.1505 100.365 25.5794 100.365ZM54.2194 39.79C61.9369 39.79 62.5929 51.5796 53.6732 51.5796C46.1543 51.5796 46.35 39.79 54.2194 39.79ZM81.2538 75.1196C74.7311 75.1196 55.6729 73.6852 55.6729 73.6852V110.032L73.729 110.294L78.243 84.0011L135.421 82.91L136.927 111.737L157.992 112C157.992 112 161 55.5381 161 44.2111C161 23.201 151.745 11.3095 130.907 10.3159C125.685 10.0672 118.854 9.07789 114.355 8.84221C133.966 33.0776 118.362 75.1196 81.2538 75.1196ZM117.366 89.8566L118.869 111.213L130.907 111.476L129.402 89.8566H117.366ZM79.7477 110.558L91.785 110.82L94.7929 89.8566H84.2602L79.7477 110.558Z' fill='%23666666'/%3E%3C/svg%3E");
+          background-repeat: no-repeat;
+          background-position: center;
+          pointer-events: none;
+          @include _480 {
+            display: none;
           }
         }
       }
@@ -452,7 +526,7 @@
       content: "next";
       font-family: swiper-icons;
       font-weight: 900;
-      font-size: 1.2rem;
+      font-size: 1rem;
       z-index: 2000;
     }
   }
@@ -473,6 +547,9 @@
     }
   }
   &__link {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
     padding: 0.2rem 0.8rem;
     color: $colorTextMenu;
     transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;

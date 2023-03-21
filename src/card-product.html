@@ -25,10 +25,10 @@
         <div class="header__wrap-select">
           <span class="header__top-text">Ваш регион:</span>
           <select class="header__top-select" name="Select" id="selectSity">
-            <option value="Москва" disabled selected>Москва</option>
-            <option value="Казань">Казань</option>
-            <option value="Уфа">Уфа</option>
-            <option value="Пермь">Пермь</option>
+            <option class="header__top-select-item" value="Москва" selected>Москва</option>
+            <option class="header__top-select-item" value="Казань">Казань</option>
+            <option class="header__top-select-item" value="Уфа">Уфа</option>
+            <option class="header__top-select-item" value="Пермь">Пермь</option>
           </select>
         </div>
         <a href="tel:+74958854547" tabindex="0" class="header__top-phone phone">
@@ -38,7 +38,7 @@
           +7 (495) 885-45-47
         </a>
         <nav class="header__top-nav nav">
-          <ul class="nav__list list-reset">
+          <ul class="nav__list list-reset" id="nav-top">
             <li class="nav__item">
               <a href="index.html" class="nav__link">О компании</a>
             </li>
@@ -111,12 +111,12 @@
         </select>
       </div>
       <div class="header__order">
-        <a href="#" class="header__lk">
+        <a href="#" aria-label="Личный кабинет" class="header__lk">
           <svg class="header__lk-icon" width="26" height="28" viewBox="0 0 26 28">
             <use xlink:href="./images/sprite.svg#lkmen"></use>
           </svg>
         </a>
-        <a href="#" class="header__cart">
+        <a href="#" aria-label="Корзина" class="header__cart">
           <svg class="header__cart-icon" width="30" height="28" viewBox="0 0 30 28">
             <use xlink:href="./images/sprite.svg#cart"></use>
           </svg>
@@ -669,10 +669,8 @@
     </div>
   </footer>
 
-
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
-  <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
 </body>
 
 </html>

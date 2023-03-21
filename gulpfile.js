@@ -123,6 +123,7 @@ const watchFiles = () => {
   browserSync.init({
     server: {
       baseDir: "dist",
+      startPath: "src/index.html",
     },
   });
 };

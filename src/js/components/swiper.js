@@ -46,7 +46,6 @@ const swiperOffers = new Swiper(".special-offers__container", {
 //////////////////////////////////////////
 
 const usefulSwiper = new Swiper(".useful__wrapper", {
-  loop: true,
   speed: 500,
   spaceBetween: 32,
 

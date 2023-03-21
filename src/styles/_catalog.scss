@@ -102,6 +102,36 @@
     padding: 3.2rem 1.5rem 2.8rem;
     background-color: $colorBackgroundCard;
     border-radius: 1rem;
+    &:nth-child(n + 10) {
+      + .none-visibility {
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 0;
+        max-height: 0;
+        padding: 0;
+        margin: 0;
+        pointer-events: none;
+        visibility: hidden;
+        opacity: 0;
+      }
+    }
+    @include _979 {
+      &:nth-child(n + 7) {
+        + .none-visibility {
+          position: absolute;
+          top: 0;
+          left: 0;
+          font-size: 0;
+          max-height: 0;
+          padding: 0;
+          margin: 0;
+          pointer-events: none;
+          visibility: hidden;
+          opacity: 0;
+        }
+      }
+    }
     @include _600 {
       padding: 1.5rem;
       .item__title {

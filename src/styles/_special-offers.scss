@@ -17,7 +17,7 @@
     padding: 0 1.5rem;
   }
   @include _480 {
-    margin-bottom: 4.4rem
+    margin-bottom: 4.4rem;
   }
 
   &__title {
@@ -66,17 +66,67 @@
     border-radius: 50%;
     width: 3.2rem;
     height: 3.2rem;
-    border: 2px solid $colorTextMenu;
-    color: $colorTextMenu;
-    transition: background-image 0.3s ease-in-out,
-      background-color 0.3s ease-in-out, border 0.3s ease-in-out;
+    border: 2px solid $colorDefault;
+    color: $colorDefault;
+    transition: background-color 0.3s, border 0.3s;
+  }
+  &__button-prev {
+    background-image: url("./images/arrow-rightprimary.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 30%;
+    + .swiper-button-disabled {
+      border: 2px solid $colorTextMenu;
+      color: $colorTextMenu;
+      background-image: url("./images/arrow-rightgrey.svg");
+      &:focus,
+      &:hover,
+      &:active {
+        border: 2px solid $colorTextMenu;
+        color: $colorTextMenu;
+        background-image: url("./images/arrow-rightgrey.svg");
+        background-color: $colorBg;
+      }
+    }
+    &:focus {
+      background: $colorHover;
+      background-image: url("./images/arrow-rightwihte.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 30%;
+    }
+    &:hover {
+      background: $colorDefault;
+      border: none;
+      background-image: url("./images/arrow-rightwihte.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 30%;
+    }
+    &:active {
+      background: $colorActive;
+      background-image: url("./images/arrow-rightwihte.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 30%;
+    }
   }
   &__button-next {
-    background-image: url("./images/arrow-rightgrey.svg");
+    background-image: url("./images/arrow-rightprimary.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 30%;
     transform: rotate(180deg);
+    + .swiper-button-disabled {
+      border: 2px solid $colorTextMenu;
+      color: $colorTextMenu;
+      background-image: url("./images/arrow-rightgrey.svg");
+      &:focus,
+      &:hover,
+      &:active {
+        background-color: $colorBg;
+      }
+    }
 
     &:focus {
       background: $colorHover;
@@ -101,34 +151,7 @@
       background-size: 30%;
     }
   }
-  &__button-prev {
-    background-image: url("./images/arrow-rightgrey.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 30%;
-    &:focus {
-      background: $colorHover;
-      background-image: url("./images/arrow-rightwihte.svg");
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: 30%;
-    }
-    &:hover {
-      background: $colorDefault;
-      border: none;
-      background-image: url("./images/arrow-rightwihte.svg");
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: 30%;
-    }
-    &:active {
-      background: $colorActive;
-      background-image: url("./images/arrow-rightwihte.svg");
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: 30%;
-    }
-  }
+
   &__items {
     width: 100%;
   }

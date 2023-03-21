@@ -1,7 +1,5 @@
 (function () {
-  const host = "https://lansvetyk.github.io/SitDownPls_prod/";
-  // JAVASCRIPT FOR INDEX PAGE
-  if (window.location.href == host + "card-product.html") {
+  if (window.location.pathname === "/card-product.html") {
     document.addEventListener("DOMContentLoaded", () => {
       const $form = document.getElementById("form-buy");
       const modalBuy = document.getElementById("modal-buy");

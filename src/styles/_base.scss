@@ -72,9 +72,9 @@ body {
   font: inherit;
   color: inherit;
 }
-.none {
-  display: none;
-}
+// .none {
+//   display: none;
+// }
 
 .btn {
   padding: 2.2rem 3rem;
@@ -111,6 +111,7 @@ body {
 }
 
 .phone {
+  display: flex;
   font-size: 1.4rem;
   line-height: 100%;
   color: $colorIconDef;
@@ -147,7 +148,7 @@ body {
   }
 }
 
-.column {
-  flex-direction: column;
-  margin-bottom: 1rem;
+* {
+  outline: none;
 }
+

@@ -1,7 +1,5 @@
 const createRangeSlader = () => {
-  const host = "https://lansvetyk.github.io/SitDownPls_prod/";
-  // JAVASCRIPT FOR INDEX PAGE
-  if (window.location.href == host + "catalog.html") {
+  if (window.location.pathname === "/catalog.html") {
     const rangeSlider = document.getElementById("range-slider");
     if (rangeSlider) {
       noUiSlider.create(rangeSlider, {

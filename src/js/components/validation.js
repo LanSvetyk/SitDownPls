@@ -1,9 +1,8 @@
 (function () {
-const host = "https://lansvetyk.github.io/SitDownPls_prod/";
-// JAVASCRIPT FOR INDEX PAGE
-if (window.location.href == host + 'index.html' || window.location.href == host) {
+if (window.location.pathname === "/index.html" || window.location.href === "http://localhost:3000/") {
   document.addEventListener("DOMContentLoaded", () => {
     const $form = document.getElementById("form");
+    const $accept = document.getElementById("accept");
     const regExpName = /^[А-Яа-яЁё\s-]{2,18}$/;
     const regExpPhone = /^[\d\+][\d\(\)\ -]{9,14}\d$/;
     const regExpEmail = /^[\w]{1}[\w-\.]*@[\w-]+\.[a-z]{2,4}$/i;
@@ -59,6 +58,13 @@ if (window.location.href == host + 'index.html' || window.location.href == host)
             result = false;
           }
         }
+        if (input.name == "accept") {
+          removeError(input);
+          if (!$accept.checked) {
+            createError(input, "Согласитесь с условиями");
+            result = false;
+          }
+        }
       }
       return result;
     }
@@ -93,6 +99,8 @@ if (window.location.href == host + 'index.html' || window.location.href == host)
         alert("Форма отправлена!");
         $form.querySelectorAll(".form input").forEach((elem) => {
           elem.value = "";
+          elem.checked = false;
+          $form.reset();
         });
       }
     });
