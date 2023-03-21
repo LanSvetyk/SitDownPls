@@ -1,4 +1,4 @@
-  if (window.location.pathname === "/catalog.html") {
+ if(window.location.toString().indexOf('catalog.html')>0) {
     const paginationBtn = document.querySelectorAll(".pagination__item");
     const catalogItem = document.querySelectorAll(".catalog__item");
     const arrayCatalogItem = Array.prototype.slice.call(catalogItem);
