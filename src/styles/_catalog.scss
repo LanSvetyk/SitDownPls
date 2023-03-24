@@ -1,8 +1,8 @@
 .catalog {
-  margin-bottom: 7rem;
+  margin-bottom: 7.2rem;
   margin-top: -2.3rem;
   .breadcrumb {
-    margin-bottom: 2.2rem;
+    margin-bottom: 2.4rem;
     @include _1190 {
       margin-bottom: 7rem;
     }
@@ -48,10 +48,14 @@
     margin-bottom: 3.2rem;
     @include _1190 {
       grid-template-columns: repeat(9, 1fr);
-      gap: 2.2rem;
+      gap: 2.4rem;
     }
     @include _979 {
       grid-template-columns: repeat(6, 1fr);
+    }
+    @include _480 {
+      grid-template-columns: auto;
+      gap: 2.6rem;
     }
   }
   &__filters {
@@ -64,11 +68,11 @@
     }
     @include _979 {
       grid-template-columns: repeat(6, 1fr);
-      gap: 1rem;
+      gap: 1.5rem;
       column-gap: 3rem;
     }
     @include _600 {
-      gap: 1rem;
+      gap: 1.3rem;
       column-gap: 1.6rem;
     }
   }
@@ -90,6 +94,9 @@
     @include _600 {
       gap: 1.6rem;
     }
+    @include _480 {
+      row-gap: 2rem;
+    }
     .item__descr {
       padding-left: 1.5rem;
     }
@@ -102,6 +109,12 @@
     padding: 3.2rem 1.5rem 2.8rem;
     background-color: $colorBackgroundCard;
     border-radius: 1rem;
+    .item__price {
+      margin: 2.4rem 0;
+      @include _979 {
+        margin: 2.5rem 0;
+      }
+    }
     &:nth-child(n + 10) {
       + .none-visibility {
         position: absolute;
@@ -166,7 +179,7 @@
       justify-content: center;
       width: 3.2rem;
       height: 3.2rem;
-      font-family: "Open Sans", sans-serif;
+      font-family: "OpenSans", sans-serif;
       font-weight: 600;
       font-size: 16px;
       line-height: 100%;

@@ -100,6 +100,9 @@
   @include _1190 {
     padding: 1.8rem 3rem 2rem;
   }
+  @include _480 {
+    padding: 2rem 2.7rem 2rem;
+  }
 }
 
 .choices[data-type*="select-one"] .choices__input {

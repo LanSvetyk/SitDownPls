@@ -1,10 +1,7 @@
 .rating {
-  margin-bottom: 6.8rem;
-  @include _1190 {
-    margin-bottom: 7rem;
-  }
-  @include _350 {
-    margin-bottom: 7.3rem;
+  margin-bottom: 7rem;
+  @include _480 {
+    margin-bottom: 6.9rem;
   }
   .container {
     display: flex;
@@ -15,14 +12,14 @@
     margin-bottom: 2.2rem;
     padding: 0;
     font-weight: 400;
-    font-size: 3.5rem;
+    font-size: 3.2rem;
     @include _1190 {
       margin-bottom: 2.5rem;
     }
     @include _480 {
       width: 80%;
-      font-size: 2.5rem;
-      margin-bottom: 2.5rem;
+      font-size: 2.4rem;
+      margin-bottom: 2.7rem;
     }
   }
   &__wrapper {
@@ -40,6 +37,9 @@
     }
     @include _1190 {
       grid-template-columns: repeat(9, 1fr);
+    }
+    @include _979 {
+      row-gap: 3.3rem;
     }
     @include _768 {
       grid-template-columns: repeat(6, 1fr);
@@ -61,8 +61,11 @@
         display: none;
       }
     }
+    @include _979 {
+      padding: 3rem 1.5rem 2.8rem;
+    }
     @include _480 {
-      padding: 1.5rem 1.4rem;
+      padding: 1.7rem 1.4rem;
       .btn {
         padding: 1rem 2.3rem;
       }
@@ -75,7 +78,7 @@
     }
 
     .item__price {
-      margin: 2.35rem 0;
+      margin: 2.6rem 0;
       @include _480 {
         margin: 1.9rem 0;
       }
@@ -85,6 +88,10 @@
     margin: 0 auto;
     @include _1190 {
       padding: 2rem 3.2rem;
+    }
+    @include _979 {
+      font-size: 1.6rem;
+      padding: 2.2rem 3.2rem;
     }
   }
 }
@@ -102,7 +109,7 @@
     background-position: left;
     @include _480 {
       margin-left: 0;
-      font-size: 1.2rem;
+      font-size: 1.4rem;
       padding-left: 2.2rem;
     }
   }
@@ -113,8 +120,13 @@
     margin-bottom: 2rem;
     justify-content: flex-end;
     align-items: center;
+    @include _979 {
+      margin-bottom: 1.9rem
+    }
     @include _480 {
-      min-height: 5.8rem;
+      margin-bottom: 0;
+      min-height: 7.6rem;
+      justify-content: center;
     }
   }
   &__price--catalog {

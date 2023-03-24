@@ -1,6 +1,6 @@
 .oxford {
   position: relative;
-  padding-top: 15rem;
+  padding-top: 15.5rem;
   padding-bottom: 15rem;
   margin-bottom: 7rem;
   max-height: 60rem;
@@ -20,7 +20,7 @@
   }
   @include _480 {
     background-image: url("./images/320/oxford.jpg");
-    margin-bottom: 16rem;
+    margin-bottom: 16.3rem;
     .container {
       min-width: 32rem;
       padding: 0 1.2rem;
@@ -43,7 +43,10 @@
     line-height: 120%;
     color: #d5b986;
     @include _1190 {
-      line-height: 128%;
+      line-height: 120%;
+    }
+    @include _979 {
+      line-height: 119%;
     }
     @include _600 {
       font-size: 4rem;

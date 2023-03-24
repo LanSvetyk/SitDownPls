@@ -29,7 +29,7 @@ img {
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "OpenSans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 1.6rem;
@@ -60,8 +60,7 @@ body {
     padding: 0 1.2rem;
   }
 }
-.main {
-}
+
 .flex {
   display: flex;
 }
@@ -72,24 +71,21 @@ body {
   font: inherit;
   color: inherit;
 }
-// .none {
-//   display: none;
-// }
 
 .btn {
-  padding: 2.2rem 3rem;
-  font-family: "Open Sans", sans-serif;
+  padding: 2.1rem 3rem;
+  font-family: "OpenSans", sans-serif;
   font-weight: 700;
-  font-size: 1.7rem;
-  line-height: 106%;
+  font-size: 1.6rem;
+  line-height: 111%;
   border: none;
   color: $colorBg;
   background-color: $colorDefault;
   border-radius: 1rem;
   transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
   cursor: pointer;
-  @include _1190 {
-    line-height: 104%;
+  @include _979 {
+    line-height: 109%;
   }
   @include _350 {
     padding: 2.2rem 3.1rem;
@@ -113,21 +109,21 @@ body {
 .phone {
   display: flex;
   font-size: 1.4rem;
-  line-height: 100%;
+  line-height: 115%;
   color: $colorIconDef;
   transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
-
   &-icon {
     width: 1.65rem;
     height: 1.65rem;
     fill: $colorIconDef;
     transition: fill 0.3s ease-in-out;
+    @include _600 {
+      margin-right: 5px;
+    }
   }
-
   &:focus {
     background-color: $colorIconFocBg;
   }
-
   &:hover {
     color: $colorIconHov;
     background-color: transparent;
@@ -135,14 +131,12 @@ body {
       fill: $colorIconHov;
     }
   }
-
   &:active {
     color: $colorIconAct;
     .phone-icon {
       fill: $colorIconAct;
     }
   }
-
   @include _768 {
     line-height: 130%;
   }

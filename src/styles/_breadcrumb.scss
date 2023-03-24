@@ -11,9 +11,9 @@
     line-height: 100%;
     color: $colorTextMenu;
     &:not(:last-child)::after {
-      padding: 8px;
+      padding-left: .5rem;
       color: $colorTextMenu;
-      content: "/\00a0";
+      content: "/";
       @include _979 {
         padding: 0;
       }

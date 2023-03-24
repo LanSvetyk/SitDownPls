@@ -1,7 +1,10 @@
 .feedback {
-  padding-bottom: 5rem;
+  padding-bottom: 6rem;
   @include _1190 {
-    padding-bottom: 5.4rem;
+    padding-bottom: 5.8rem;
+  }
+  @include _979 {
+    padding-bottom: 5.8rem;
   }
   &__wrapper {
     display: grid;
@@ -29,12 +32,13 @@
   &__title {
     margin: 0;
     padding: 0;
-    margin-bottom: 0.8rem;
+    margin-bottom: 1rem;
     font-weight: 400;
-    font-size: 3.4rem;
+    font-size: 3.2rem;
     line-height: 100%;
-    @include _350 {
-      font-size: 2.5rem;
+    @include _480 {
+      margin-bottom: 0.8rem;
+      font-size: 2.4rem;
     }
   }
   &__img {
@@ -54,6 +58,9 @@
   }
   .btn {
     padding: 2rem 3.3rem;
+    @include _979 {
+      font-size: 1.6rem;
+    }
     @include _350 {
       padding: 1.8rem 3.3rem;
     }
@@ -66,7 +73,10 @@
     display: flex;
     flex-direction: column;
     gap: 0.2rem;
-    margin-bottom: 3rem;
+    margin-bottom: 2.7rem;
+    @include _1190 {
+      margin-bottom: 2.8rem;
+    }
   }
   &__input {
     width: 100%;
@@ -91,18 +101,13 @@
     }
   }
   &__check {
-    margin-top: 1rem;
+    margin-top: 1.2rem;
     @include _1190 {
       margin-top: 1.4rem;
     }
-    @include _350 {
-      font-size: 1.3rem;
-    }
   }
-  @include _1190 {
-    &__checkbox--link {
-      font-size: 1.5rem;
-    }
+  &__checkbox--link {
+    font-size: 1.4rem;
   }
   @include _350 {
     &__checkbox--link {

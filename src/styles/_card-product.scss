@@ -2,7 +2,7 @@
   max-width: 131rem;
   margin: 0 auto;
   padding: 0 1.5rem;
-  margin-top: -2.6rem;
+  margin-top: -2.4rem;
   @include _1190 {
     padding: 0 3.5rem;
     max-width: 102.4rem;
@@ -16,7 +16,7 @@
     min-width: 32rem;
   }
   @include _350 {
-    margin-bottom: 7.3rem;
+    margin-bottom: 6.7rem;
     padding: 0 1.2rem;
   }
   &__wrapper {
@@ -33,7 +33,7 @@
     @include _979 {
       margin-bottom: 3.3rem;
       grid-template-columns: repeat(6, 1fr);
-      gap: 3rem;
+      gap: 3.2rem;
     }
     @include _600 {
       gap: 1.7rem;
@@ -74,8 +74,11 @@
       font-size: 1.4rem;
       line-height: 180%;
       @include _979 {
-        font-size: 1.5rem;
-        line-height: 167%;
+        line-height: 181%;
+      }
+      @include _480 {
+        line-height: 178%;
+        padding-right: 0.3rem;
       }
     }
     .card-product__schemes {
@@ -83,7 +86,7 @@
       gap: 3.2rem;
       margin-top: 10rem;
       @include _1190 {
-        margin-top: 7rem;
+        margin-top: 7.5rem;
       }
       @include _979 {
         margin-top: 2.5rem;
@@ -98,22 +101,21 @@
   }
   &__parameters {
     grid-column: span 6;
-    font-family: "Open Sans", sans-serif;
+    font-family: "OpenSans", sans-serif;
     font-weight: 400;
     font-size: 1.4rem;
-    line-height: 155%;
+    line-height: 156%;
     @include _1190 {
       grid-column: span 4;
-      line-height: 159%;
     }
     @include _979 {
       grid-column: span 6;
-      line-height: 159%;
+      line-height: 1.78;
       margin-top: 0.3rem;
     }
     @include _350 {
-      line-height: 146%;
-      margin-top: 1.3rem;
+      line-height: 104%;
+      margin-top: 1.7rem;
     }
     .card-product__params {
       margin: 0;
@@ -121,6 +123,9 @@
       display: flex;
       @include _600 {
         flex-direction: column;
+      }
+      @include _350 {
+        margin-bottom: 1rem;
       }
     }
     .card-product__parametr {
@@ -143,6 +148,7 @@
       }
       @include _600 {
         font-size: 1rem;
+        margin-bottom: 0.2rem;
       }
       &::after {
         content: ".................................................................";
@@ -165,7 +171,7 @@
       margin-bottom: -2.4rem;
     }
     @include _979 {
-      margin-bottom: 2.4rem;
+      margin-bottom: 2.8rem;
     }
     @include _600 {
       margin-bottom: 0;
@@ -303,9 +309,6 @@
   }
   .breadcrumb {
     margin-bottom: 2.2rem;
-    @include _1190 {
-      margin-bottom: 2.6rem;
-    }
     @include _979 {
       margin-bottom: 2rem;
       padding: 1.3rem 0;
@@ -321,12 +324,14 @@
     @include _979 {
       max-width: 30%;
       margin-left: 0;
-      max-height: 36rem;
+      max-height: 35rem;
+      padding-top: 3rem;
     }
     @include _600 {
       max-width: 100%;
       margin-left: auto;
       max-height: 8.1rem;
+      padding-top: 1rem;
     }
   }
   &__item {
@@ -356,11 +361,14 @@
   padding-top: 1.4rem;
   @include _1190 {
     grid-column: span 4;
+    .item__descr {
+      margin-top: 0.5rem;
+    }
   }
   @include _979 {
     position: absolute;
-    top: 31.8rem;
-    left: 35.5%;
+    top: 31.1rem;
+    left: 35.3%;
   }
   @include _600 {
     position: static;
@@ -372,21 +380,20 @@
   .item__star {
     margin-left: 0;
     margin-bottom: 0.5rem;
-    @include _350 {
-      display: block;
-      margin-bottom: 0.8rem;
+    @include _480 {
+      font-size: 1.2rem;
     }
   }
   .item__title {
     margin-bottom: 0.5rem;
-    font-family: "Open Sans", sans-serif;
+    font-family: "OpenSans", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 2.4rem;
     line-height: 130%;
     color: $colorText;
     @include _480 {
-      font-size: 1.7rem;
+      font-size: 1.6rem;
     }
   }
   .item__subtitle {
@@ -418,21 +425,20 @@
     display: block;
     max-width: 23rem;
     margin-bottom: 0.5rem;
-
+    padding: 1.8rem 3.4rem;
     font-weight: 600;
     font-size: 1.6rem;
     line-height: 100%;
-
     background-color: $colorDefault;
     color: $colorBg;
     @include _480 {
       max-width: 100%;
       width: 100%;
-      margin-bottom: 1rem;
     }
   }
   .item__btn--cart {
-    padding: 1rem 3.2rem;
+    min-width: 23rem;
+    padding: 1.1rem 2.2rem;
     font-weight: 400;
     font-size: 1.6rem;
     line-height: 100%;
@@ -479,4 +485,3 @@
     margin: 0 auto;
   }
 }
-

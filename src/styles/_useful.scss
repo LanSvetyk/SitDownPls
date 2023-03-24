@@ -26,21 +26,25 @@
     margin: 0;
     padding: 0;
     margin-bottom: -3.2rem;
+    font-family: "OpenSans", sans-serif;
     font-weight: 400;
-    font-size: 3.5rem;
+    font-size: 3.2rem;
     line-height: 100%;
     @include _750 {
       margin-bottom: 2.6rem;
     }
     @include _350 {
-      font-size: 2.7rem;
+      font-size: 2.4rem;
     }
   }
   &__container {
     padding-top: 4rem;
-    margin-bottom: 6.5rem;
+    margin-bottom: 7.1rem;
     @include _1190 {
       margin-bottom: 7rem;
+    }
+    @include _979 {
+      margin-bottom: 7.2rem;
     }
     @include _768 {
       padding: 0 3.6rem;
@@ -49,7 +53,7 @@
       padding: 0;
     }
     @include _350 {
-      margin-bottom: 4rem;
+      margin-bottom: 4.1rem;
     }
   }
   &__button-wrapper {
@@ -57,7 +61,7 @@
     display: flex;
     flex-direction: row-reverse;
     justify-content: flex-start;
-    margin-bottom: 2.4rem;
+    margin-bottom: 2.8rem;
     gap: 1.3rem;
     @include _768 {
       margin-bottom: 2.7rem;
@@ -169,22 +173,27 @@
     max-height: 45.6rem;
   }
   &__descr {
+    padding: 3rem;
+    padding-top: 3.4rem;
     height: 100%;
     min-height: 19rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin-top: 0;
-    padding: 3rem;
+    @include _979 {
+      padding-top: 3rem;
+    }
   }
   &__text {
+    font-family: "OpenSans", sans-serif;
     margin: 0;
-    font-size: 2.6rem;
-    line-height: 126%;
+    font-size: 2.4rem;
+    line-height: 139%;
     @include _1190 {
       font-size: 1.6rem;
       line-height: 134%;
-      max-width: 90%;
+      max-width: 97%;
     }
   }
   &__btn {

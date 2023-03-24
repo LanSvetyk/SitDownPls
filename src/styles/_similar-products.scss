@@ -13,7 +13,7 @@
     padding: 0 7.2rem;
   }
   @include _600 {
-    padding: 0px 1.5rem;
+    padding: 0px 1.2rem;
     min-width: 32rem;
   }
   @include _350 {
@@ -27,8 +27,12 @@
     min-height: 42rem;
     .item__descr {
       padding-left: 1.5rem;
+      @include _1190 {
+        margin-top: 1.7rem;
+      }
       @include _350 {
         padding-left: 0;
+        margin-top: 0;
       }
     }
     @include _600 {
@@ -38,7 +42,7 @@
       }
       .item__descr .item__btn {
         width: 100%;
-        padding: 1.2rem 0.5rem;
+        padding: 1rem;
       }
       .item__title {
         font-size: 1.6rem;
@@ -55,17 +59,31 @@
     padding: 3.2rem 1.5rem 2.8rem;
     background-color: $colorBackgroundCard;
     border-radius: 1rem;
-    @include _600 {
-      padding: 1.6rem;
+    .item__descr {
+      .item__title {
+        line-height: 133%;
+      }
     }
-    @include _350 {
+    @include _1190 {
+      .item__img-wrapper--small {
+        margin-bottom: 0;
+      }
+      .item__price {
+        margin: 2.4rem 0;
+      }
+    }
+    @include _600 {
+      padding: 1.6rem 1.2rem;
+    }
+    @include _480 {
+      padding: 1.5rem;
       .item__img-wrapper--small {
         min-height: 6.8rem;
         justify-content: center;
-        margin-bottom: 1rem;
+        margin-bottom: 0.5rem;
       }
       .item__price {
-        margin: 1.6rem 0;
+        margin: 1.9rem 0;
       }
     }
   }
@@ -74,8 +92,12 @@
     padding: 0;
     margin-bottom: 2.4rem;
     font-weight: 400;
-    font-size: 2.5rem;
+    font-size: 2.6rem;
     line-height: 100%;
+    @include _979 {
+      font-size: 2.4rem;
+      margin-bottom: 2.6rem;
+    }
   }
   &__button-wrapper {
     position: absolute;

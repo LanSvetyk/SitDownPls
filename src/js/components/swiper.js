@@ -126,6 +126,7 @@ const miniCardProduct = new Swiper(".mini-card-product__images", {
     601: {
       slidesPerView: 4,
       direction: "vertical",
+      spaceBetween: 24,
     },
     979: {
       slidesPerView: 4,
