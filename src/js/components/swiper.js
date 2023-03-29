@@ -19,9 +19,10 @@ const swiperOffers = new Swiper(".special-offers__container", {
   slidesPerView: 3,
   spaceBetween: 32,
   speed: 500,
+  loop: false,
   navigation: {
-    nextEl: ".special-offers__button-prev",
-    prevEl: ".special-offers__button-next",
+    nextEl: ".special-offers__button-next",
+    prevEl: ".special-offers__button-prev",
   },
 
   breakpoints: {
@@ -50,8 +51,8 @@ const usefulSwiper = new Swiper(".useful__wrapper", {
   spaceBetween: 32,
 
   navigation: {
-    nextEl: ".useful__button-prev",
-    prevEl: ".useful__button-next",
+    nextEl: ".useful__button-next",
+    prevEl: ".useful__button-prev",
   },
 
   breakpoints: {
@@ -77,8 +78,8 @@ const similarProducts = new Swiper(".similar-products__wrapper", {
   speed: 500,
 
   navigation: {
-    nextEl: ".similar-products__button-prev",
-    prevEl: ".similar-products__button-next",
+    nextEl: ".similar-products__button-next",
+    prevEl: ".similar-products__button-prev",
   },
 
   breakpoints: {
@@ -141,8 +142,8 @@ const cardProduct = new Swiper(".card-product__images", {
   speed: 500,
   spaceBetween: 32,
   navigation: {
-    nextEl: ".card-product__button-prev",
-    prevEl: ".card-product__button-next",
+    nextEl: ".card-product__button-next",
+    prevEl: ".card-product__button-prev",
   },
   thumbs: {
     swiper: miniCardProduct,
@@ -181,8 +182,8 @@ const miniCardProductModal = new Swiper(".mini-card__modal", {
     },
   },
   navigation: {
-    nextEl: ".mini-card__button-prev",
-    prevEl: ".mini-card__button-next",
+    nextEl: ".mini-card__button-next",
+    prevEl: ".mini-card__button-prev",
   },
 });
 

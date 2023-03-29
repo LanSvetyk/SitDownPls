@@ -88,12 +88,22 @@ input[type="checkbox"]:focus {
   }
   &__input {
     padding: 0.5rem 1.3rem;
-    border: none;
     display: flex;
     width: 8.6rem;
     height: 3rem;
     border: 0.1rem solid #999999;
     border-radius: 0.2rem;
+    transition: border 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    &:focus {
+      background-color: $colorFocusBg;
+      border: 0.1rem solid $colorDefault;
+    }
+    &:hover {
+      border: 0.1rem solid $colorDefault;
+    }
+    &:active {
+      border: 0.1rem solid $colorActive;
+    }
   }
   &__text {
     margin-right: 1rem;
@@ -113,6 +123,10 @@ input[type="checkbox"]:focus {
 
 .noUi-connect {
   background-color: $colorDefault;
+  &:focus,
+  &:active {
+    background-color: $colorActive;
+  }
 }
 
 .noUi-handle::after,
@@ -131,6 +145,15 @@ input[type="checkbox"]:focus {
   width: 1.3rem;
   height: 1.3rem;
   background-image: url("./images/range-slider.svg");
+  &:focus {
+    background-image: url("./images/range-slider-focus.svg");
+  }
+  &:hover {
+    background-image: url("./images/range-slider-hover.svg");
+  }
+  &:active {
+    background-image: url("./images/range-slider-focus.svg");
+  }
 }
 
 .list {
@@ -243,10 +266,11 @@ input[type="checkbox"]:focus {
     display: flex;
     justify-content: space-between;
     margin-bottom: 1rem;
-    margin-top: -0.8rem;
+    margin-top: 0.1rem;
     @include _1190 {
       flex-direction: column;
       gap: 1rem;
+      margin-top: 0.5rem;
     }
   }
   &__select-css {
@@ -300,9 +324,12 @@ input[type="checkbox"]:focus {
     border-color: #888;
   }
   &__select-css:focus {
+    display: flex;
+    width: max-content;
+    padding: 0.2rem;
     border-color: #aaa;
-    box-shadow: 0 0 1px 3px $colorActive;
-    box-shadow: 0 0 0 3px -moz-mac-focusring;
+    box-shadow: 0 0 0.1rem 0.3rem $colorActive;
+    box-shadow: 0 0 0 0.3rem -moz-mac-focusring;
     color: #222;
     outline: none;
   }

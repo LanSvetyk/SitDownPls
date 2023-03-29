@@ -24,12 +24,14 @@
       <div class="header__top-wrapper">
         <div class="header__wrap-select">
           <span class="header__top-text">Ваш регион:</span>
-          <select class="header__top-select" name="Select" id="selectSity">
-            <option class="header__top-select-item" value="Москва" selected>Москва</option>
-            <option class="header__top-select-item" value="Казань">Казань</option>
-            <option class="header__top-select-item" value="Уфа">Уфа</option>
-            <option class="header__top-select-item" value="Пермь">Пермь</option>
-          </select>
+          <div class="header__select-wrapper">
+            <select class="header__top-select js-choice" name="Select" id="selectSity">
+              <option class="header__top-select-item" value="Москва" selected>Москва</option>
+              <option class="header__top-select-item" value="Казань">Казань</option>
+              <option class="header__top-select-item" value="Уфа">Уфа</option>
+              <option class="header__top-select-item" value="Пермь">Пермь</option>
+            </select>
+          </div>
         </div>
         <a href="tel:+74958854547" tabindex="0" class="header__top-phone phone">
           <svg class="header__phone phone-icon" viewBox="0 0 22 22">
@@ -58,7 +60,7 @@
     <div class="header__middle">
       <div class="header__logo-wrapper">
         <a href="index.html" class="header__logo-link">
-          <svg class="header__logo" width="189" height="29" viewBox="0 0 189 29">
+          <svg class="header__logo" width="187" height="29" viewBox="0 0 189 29">
             <use xlink:href="./images/sprite.svg#logotipSDp"></use>
           </svg>
         </a>

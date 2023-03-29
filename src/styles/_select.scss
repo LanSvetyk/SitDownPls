@@ -42,13 +42,15 @@
   overflow: hidden;
   transition: border 0.3s ease-in-out;
   &:focus {
+    color: $colorActive;
     background-color: $colorDefault;
   }
-
   &:hover {
+    color: $colorHover;
     border: 2px solid $colorDefault;
   }
   &:active {
+    color: $colorActive;
     border: 2px solid $colorActive;
     background-color: $colorBg;
   }
@@ -151,35 +153,41 @@
   right: 2.5rem;
   top: 50%;
   margin-top: -0.55rem;
-  height: 1.3rem;
-  width: 0.8rem;
+  height: 0.8rem;
+  width: 1.3rem;
   border-style: none;
   border-color: transparent;
   border-width: 0;
-  background-image: url("./images/arrow-rightprimary.svg");
+  background-image: url("./images/arrow-downprimary.svg");
   background-repeat: no-repeat;
   background-position: center;
-  transform: rotate(90deg);
+  transform: rotate(0);
   pointer-events: none;
-  @include _1190 {
-    right: 3.5rem;
-  }
+}
+.choices[data-type*="select-one"]:focus::after {
+  background-image: url("./images/arrow-downactive.svg");
+}
+.choices[data-type*="select-one"]:hover::after {
+  background-image: url("./images/arrow-downhover.svg");
+}
+.choices[data-type*="select-one"]:active::after {
+  background-image: url("./images/arrow-downactive.svg");
 }
 
 .choices[data-type*="select-one"].is-open::after {
-  height: 1.3rem;
-  width: 0.8rem;
+  height: 0.8rem;
+  width: 1.3rem;
   position: absolute;
-  right: 3.5rem;
+  right: 2.5rem;
   top: 50%;
   margin-top: -0.55rem;
   border-style: none;
   border-color: transparent;
   border-width: 0;
-  background-image: url("./images/arrow-rightprimary.svg");
+  background-image: url("./images/arrow-downprimary.svg");
   background-repeat: no-repeat;
   background-position: center;
-  transform: rotate(-90deg);
+  transform: rotate(180deg);
   pointer-events: none;
 }
 

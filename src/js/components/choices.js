@@ -10,3 +10,17 @@ const selectShoices = () => {
   });
 };
 selectShoices();
+
+const selectFirstShoices = () => {
+  const selectFirst = document.querySelector(".js-choice");
+  console.log(selectFirst);
+  const choicesFirst = new Choices(selectFirst, {
+    position: "bottom",
+    placeholder: false,
+    placeholderValue: false,
+    searchPlaceholderValue: false,
+    searchEnabled: false,
+    itemSelectText: "",
+  });
+};
+selectFirstShoices();

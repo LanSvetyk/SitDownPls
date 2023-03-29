@@ -59,8 +59,7 @@
   &__button-wrapper {
     width: 100%;
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: flex-start;
+    justify-content: flex-end;
     margin-bottom: 2.8rem;
     gap: 1.3rem;
     @include _768 {
@@ -78,86 +77,47 @@
     border: 2px solid $colorDefault;
     color: $colorDefault;
     transition: background-color 0.3s, border 0.3s;
+    background-image: url("./images/arrow-rightprimary.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 30%;
+    &:focus {
+      background: $colorHover;
+      background-image: url("./images/arrow-rightwihte.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 30%;
+    }
+    &:hover {
+      background: $colorDefault;
+      border: none;
+      background-image: url("./images/arrow-rightwihte.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 30%;
+    }
+    &:active {
+      background: $colorActive;
+      background-image: url("./images/arrow-rightwihte.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 30%;
+    }
   }
   &__button-prev {
-    background-image: url("./images/arrow-rightprimary.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 30%;
-    + .swiper-button-disabled {
-      border: 2px solid $colorTextMenu;
-      color: $colorTextMenu;
-      background-image: url("./images/arrow-rightgrey.svg");
-      &:focus,
-      &:hover,
-      &:active {
-        border: 2px solid $colorTextMenu;
-        color: $colorTextMenu;
-        background-image: url("./images/arrow-rightgrey.svg");
-        background-color: $colorBg;
-      }
-    }
-    &:focus {
-      background: $colorHover;
-      background-image: url("./images/arrow-rightwihte.svg");
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: 30%;
-    }
-    &:hover {
-      background: $colorDefault;
-      border: none;
-      background-image: url("./images/arrow-rightwihte.svg");
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: 30%;
-    }
-    &:active {
-      background: $colorActive;
-      background-image: url("./images/arrow-rightwihte.svg");
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: 30%;
-    }
-  }
-  &__button-next {
-    background-image: url("./images/arrow-rightprimary.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 30%;
     transform: rotate(180deg);
-    + .swiper-button-disabled {
+  }
+  .swiper-button-disabled {
+    border: 2px solid $colorTextMenu;
+    color: $colorTextMenu;
+    background-image: url("./images/arrow-rightgrey.svg");
+    &:focus,
+    &:hover,
+    &:active {
       border: 2px solid $colorTextMenu;
       color: $colorTextMenu;
       background-image: url("./images/arrow-rightgrey.svg");
-      &:focus,
-      &:hover,
-      &:active {
-        background-color: $colorBg;
-      }
-    }
-
-    &:focus {
-      background: $colorHover;
-      background-image: url("./images/arrow-rightwihte.svg");
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: 30%;
-    }
-    &:hover {
-      background: $colorDefault;
-      border: none;
-      background-image: url("./images/arrow-rightwihte.svg");
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: 30%;
-    }
-    &:active {
-      background: $colorActive;
-      background-image: url("./images/arrow-rightwihte.svg");
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: 30%;
+      background-color: $colorBg;
     }
   }
 }
