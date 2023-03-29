@@ -1,6 +1,8 @@
 (function () {
   if (
     window.location.toString().indexOf("index.html") > 0 ||
+    window.location.toString().indexOf("catalog.html") < 0 &&
+    window.location.toString().indexOf("card-product.html") < 0 &&
     window.location.toString().indexOf("localhost") > 0 ||
     window.location.href == "https://lansvetyk.github.io/SitDownPls_prod/"
   ) {
@@ -72,8 +74,8 @@
         }
         return result;
       }
-      const searchInputText = $form.querySelector('input[type="text"]');
-      searchInputText.addEventListener("keypress", (event) => {
+      const $searchInputText = $form.querySelector('.form__input');
+      $searchInputText.addEventListener("keypress", (event) => {
         let regExp = /[а-яА-Я\s-]/;
         if (event.key.match(regExp)) {
           return null;
@@ -81,7 +83,7 @@
           event.preventDefault();
         }
       });
-      searchInputText.addEventListener("blur", () => {
+      $searchInputText.addEventListener("blur", () => {
         let correctInput = field.value.trim();
         while (correctInput.indexOf("-") === 0) {
           correctInput = correctInput.slice(1);

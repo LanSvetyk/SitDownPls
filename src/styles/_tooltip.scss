@@ -71,8 +71,5 @@
       opacity: 0;
       transition: opacity 0.3s ease-in-out;
     }
-    @include _480 {
-      min-width: 10rem;
-    }
   }
 }

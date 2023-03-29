@@ -93,6 +93,11 @@
       font-size: 1.6rem;
       padding: 2.2rem 3.2rem;
     }
+    &:disabled {
+      color: $colorTextMenu;
+      background: $colorBgDis;
+      border-radius: 10px;
+    }
   }
 }
 
@@ -121,7 +126,7 @@
     justify-content: flex-end;
     align-items: center;
     @include _979 {
-      margin-bottom: 1.9rem
+      margin-bottom: 1.9rem;
     }
     @include _480 {
       margin-bottom: 0;

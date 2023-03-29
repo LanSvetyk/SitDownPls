@@ -48,7 +48,7 @@ input[type="checkbox"]:focus {
   &__checkboxes {
     cursor: pointer;
     .list__box {
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.1rem;
     }
     @include _1190 {
       grid-column: span 2;
@@ -123,6 +123,7 @@ input[type="checkbox"]:focus {
 
 .noUi-connect {
   background-color: $colorDefault;
+  transition: background-color 0.3s ease-in-out;
   &:focus,
   &:active {
     background-color: $colorActive;
@@ -145,6 +146,7 @@ input[type="checkbox"]:focus {
   width: 1.3rem;
   height: 1.3rem;
   background-image: url("./images/range-slider.svg");
+  transition: background-image 0.3s ease-in-out;
   &:focus {
     background-image: url("./images/range-slider-focus.svg");
   }
@@ -339,7 +341,7 @@ input[type="checkbox"]:focus {
 }
 .oxford-sidebar {
   min-height: 36rem;
-  margin-top: 25%;
+  margin-top: 27%;
   background: $colorText;
   border-radius: 1rem;
   @include _1190 {

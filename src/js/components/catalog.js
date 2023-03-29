@@ -3,7 +3,7 @@
     const catalogItem = document.querySelectorAll(".catalog__item");
     const arrayCatalogItem = Array.prototype.slice.call(catalogItem);
     // задаем изначально девять карточек, остальным карточкам задаем класс none-visibility
-    alert(window.innerWidth);
+    // alert(window.innerWidth);
     if (document.documentElement.clientWidth < 979) {
       arrayCatalogItem.slice(6, 9).forEach((elem) => {
         elem.classList.add("none-visibility");
