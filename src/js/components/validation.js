@@ -107,6 +107,9 @@
             elem.value = "";
             elem.checked = false;
             $form.reset();
+            setTimeout(function () {
+              window.location.href = window.location.href;
+            }, 500);
           });
         }
       });
