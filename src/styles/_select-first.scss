@@ -82,7 +82,7 @@
   }
   .is-focused .choices__inner,
   .is-open .choices__inner {
-    border-color: none;
+    border-color: transparent;
     background-color: $colorFocusBg;
   }
   .choices__inner,
